@@ -1,0 +1,26 @@
+[package]
+name = "ow-wasm-action-mobilenet-oc"
+version = "0.1.0"
+authors = ["Aleksandar Vuckovic"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0.57"
+anyhow = "1.0"
+image = "0.24"
+tract-tensorflow = "0.19"
+base64 = "0.21"
+serde = { version = "1.0", features = ["derive"] }
+
+[features]
+default = ["wasm"]
+wasm = []
+# Left for easier compilation in justfile
+bin = []
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+opt-level = "z" # Prioritize size reduction
+panic = "abort" # Removes panic-related code
+strip = true # Strip debug symbols
