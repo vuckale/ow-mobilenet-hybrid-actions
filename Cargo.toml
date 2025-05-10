@@ -17,6 +17,7 @@ default = ["wasm"]
 wasm = []
 # Left for easier compilation in justfile
 bin = []
+local-test = []
 
 [profile.release]
 lto = "fat"
