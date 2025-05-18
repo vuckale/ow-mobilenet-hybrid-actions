@@ -1,0 +1,788 @@
+[
+    {
+      "no_concurrent_requests": 1,
+      "responses": [
+        {
+          "activationId": "0d31a5c06d12457db1a5c06d12557d26",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust1"
+            },
+            {
+              "key": "waitTime",
+              "value": 2869
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8521
+            }
+          ],
+          "duration": 8921,
+          "end": 1747260793321,
+          "logs": [],
+          "name": "mobilenet_native_rust1",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260784400,
+          "subject": "guest",
+          "version": "0.0.1"
+        }
+      ]
+    },
+    {
+      "no_concurrent_requests": 2,
+      "responses": [
+        {
+          "activationId": "aed71a52ded14e01971a52ded18e01f6",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust1"
+            },
+            {
+              "key": "waitTime",
+              "value": 15
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            }
+          ],
+          "duration": 412,
+          "end": 1747260796138,
+          "logs": [],
+          "name": "mobilenet_native_rust1",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260795726,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "71aca2be4c4f4455aca2be4c4fa455bc",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust2"
+            },
+            {
+              "key": "waitTime",
+              "value": 2854
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8411
+            }
+          ],
+          "duration": 8805,
+          "end": 1747260807379,
+          "logs": [],
+          "name": "mobilenet_native_rust2",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260798574,
+          "subject": "guest",
+          "version": "0.0.1"
+        }
+      ]
+    },
+    {
+      "no_concurrent_requests": 3,
+      "responses": [
+        {
+          "activationId": "1b3c92cb11544a10bc92cb11545a102b",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust1"
+            },
+            {
+              "key": "waitTime",
+              "value": 2345
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 9196
+            }
+          ],
+          "duration": 9588,
+          "end": 1747260820924,
+          "logs": [],
+          "name": "mobilenet_native_rust1",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260811336,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "8aa6231f60de4166a6231f60de61666a",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust2"
+            },
+            {
+              "key": "waitTime",
+              "value": 14243
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8414
+            }
+          ],
+          "duration": 8808,
+          "end": 1747260832046,
+          "logs": [],
+          "name": "mobilenet_native_rust2",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260823238,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "739b70829a454d5f9b70829a451d5fcb",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust3"
+            },
+            {
+              "key": "waitTime",
+              "value": 25522
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8360
+            }
+          ],
+          "duration": 8753,
+          "end": 1747260843276,
+          "logs": [],
+          "name": "mobilenet_native_rust3",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260834523,
+          "subject": "guest",
+          "version": "0.0.1"
+        }
+      ]
+    },
+    {
+      "no_concurrent_requests": 4,
+      "responses": [
+        {
+          "activationId": "118134c7337840658134c7337880659e",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust1"
+            },
+            {
+              "key": "waitTime",
+              "value": 2510
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 9207
+            }
+          ],
+          "duration": 9598,
+          "end": 1747260857141,
+          "logs": [],
+          "name": "mobilenet_native_rust1",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260847543,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "a3b12dc2f07148f8b12dc2f07188f80b",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust3"
+            },
+            {
+              "key": "waitTime",
+              "value": 14602
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8446
+            }
+          ],
+          "duration": 8848,
+          "end": 1747260868492,
+          "logs": [],
+          "name": "mobilenet_native_rust3",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260859644,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "59725bce199f4dc0b25bce199f0dc0b4",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust2"
+            },
+            {
+              "key": "waitTime",
+              "value": 25662
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8626
+            }
+          ],
+          "duration": 9021,
+          "end": 1747260879717,
+          "logs": [],
+          "name": "mobilenet_native_rust2",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260870696,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "4337ebe77cb343a7b7ebe77cb3f3a707",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust4"
+            },
+            {
+              "key": "waitTime",
+              "value": 37162
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8526
+            }
+          ],
+          "duration": 8911,
+          "end": 1747260891120,
+          "logs": [],
+          "name": "mobilenet_native_rust4",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260882209,
+          "subject": "guest",
+          "version": "0.0.1"
+        }
+      ]
+    },
+    {
+      "no_concurrent_requests": 5,
+      "responses": [
+        {
+          "activationId": "e582f4df11f7479d82f4df11f7479dd1",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust1"
+            },
+            {
+              "key": "waitTime",
+              "value": 2222
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8451
+            }
+          ],
+          "duration": 8838,
+          "end": 1747260904603,
+          "logs": [],
+          "name": "mobilenet_native_rust1",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260895765,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "9cfb4d9a71ff45d2bb4d9a71ff85d2a2",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust2"
+            },
+            {
+              "key": "waitTime",
+              "value": 13345
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8503
+            }
+          ],
+          "duration": 8895,
+          "end": 1747260915787,
+          "logs": [],
+          "name": "mobilenet_native_rust2",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260906892,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "dde4cb187bb949dba4cb187bb929dba0",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust3"
+            },
+            {
+              "key": "waitTime",
+              "value": 24613
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8409
+            }
+          ],
+          "duration": 8806,
+          "end": 1747260926975,
+          "logs": [],
+          "name": "mobilenet_native_rust3",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260918169,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "d598d81e09da44a098d81e09da34a0cb",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust4"
+            },
+            {
+              "key": "waitTime",
+              "value": 35775
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8598
+            }
+          ],
+          "duration": 8992,
+          "end": 1747260938333,
+          "logs": [],
+          "name": "mobilenet_native_rust4",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260929341,
+          "subject": "guest",
+          "version": "0.0.1"
+        },
+        {
+          "activationId": "61f9ceb2b85841efb9ceb2b85821efad",
+          "annotations": [
+            {
+              "key": "path",
+              "value": "guest/mobilenet_native_rust5"
+            },
+            {
+              "key": "waitTime",
+              "value": 47035
+            },
+            {
+              "key": "kind",
+              "value": "blackbox"
+            },
+            {
+              "key": "timeout",
+              "value": false
+            },
+            {
+              "key": "limits",
+              "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 512,
+                "timeout": 60000
+              }
+            },
+            {
+              "key": "initTime",
+              "value": 8480
+            }
+          ],
+          "duration": 8873,
+          "end": 1747260949481,
+          "logs": [],
+          "name": "mobilenet_native_rust5",
+          "namespace": "guest",
+          "publish": false,
+          "response": {
+            "result": {
+              "body": "Mobilenet output:\n{\n  \"confidence\": 0.6041240692138672,\n  \"label\": \"hen\"\n}\n"
+            },
+            "size": 98,
+            "status": "success",
+            "success": true
+          },
+          "start": 1747260940608,
+          "subject": "guest",
+          "version": "0.0.1"
+        }
+      ]
+    }
+  ]

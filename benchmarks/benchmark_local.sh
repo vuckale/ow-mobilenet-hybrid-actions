@@ -26,8 +26,8 @@ fi
 
 REPEATS=5
 WARM_RUNS=100
-INPUT="./input/cat2x.json"
-BIN="./bin"
+INPUT="./inputs/cat1.json"
+BIN="../bin"
 NATIVE="$BIN/mobilenet-oc-l"
 WASM="$BIN/mobilenet-oc-l-o.wasm"
 check_file() {
@@ -139,7 +139,7 @@ if [[ $MODE == "jit" ]]; then
 
 elif [[ $MODE == "aot" ]]; then
   WASM_WASMTIME_AOT="$BIN/mobilenet-oc-l-wasmtime-native.cwasm"
-  WASM_WASMER_AOT="./mobilenet-oc-l-wasmer-native.wasmu"
+  WASM_WASMER_AOT="$BIN/mobilenet-oc-l-wasmer-native.wasmu"
 
   check_file "$WASM_WASMTIME_AOT"
   check_file "$WASM_WASMER_AOT"

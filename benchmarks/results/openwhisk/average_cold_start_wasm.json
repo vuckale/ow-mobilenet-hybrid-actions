@@ -1,0 +1,12 @@
+[
+    {"concurrency": 1, "count": 1, "avg_init": 1038, "max_wait": 296, "avg_duration": 2154, "avg_total": 2450
+    },
+    {"concurrency": 2, "count": 2, "avg_init": 1149, "max_wait": 271, "avg_duration": 1715.5, "avg_total": 1860
+    },
+    {"concurrency": 3, "count": 3, "avg_init": 1047, "max_wait": 268, "avg_duration": 1542.33, "avg_total": 1641.33
+    },
+    {"concurrency": 4, "count": 4, "avg_init": 1216, "max_wait": 324, "avg_duration": 1469.5, "avg_total": 1567.75
+    },
+    {"concurrency": 5, "count": 5, "avg_init": 1130, "max_wait": 1320, "avg_duration": 1485.2, "avg_total": 1768.8
+    }
+]

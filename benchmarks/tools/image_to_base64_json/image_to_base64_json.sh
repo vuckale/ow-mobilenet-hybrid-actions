@@ -17,7 +17,7 @@ BASENAME=$(basename "$IMAGE_PATH")
 FILENAME="${BASENAME%.*}"
 
 # Output JSON file path
-OUTPUT_FILE="../input/${FILENAME}.json"
+OUTPUT_FILE="../inputs/${FILENAME}.json"
 
 # Encode image to base64 (no line wrapping)
 BASE64_DATA=$(base64 -w 0 "$IMAGE_PATH")

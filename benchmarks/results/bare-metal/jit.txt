@@ -1,0 +1,65 @@
+>_ ./benchmark_local.sh --jit
+==> Cold Start Test (single run)
+This test measures the time it takes to start and run each binary once. It reflects performance in short-lived, CLI-style or serverless use cases.
+==> Measuring Native cold start...
+Run 1: 0.57s
+Run 2: 0.59s
+Run 3: 0.56s
+Run 4: 0.51s
+Run 5: 0.50s
+Average Native cold start time: .546s
+
+==> Measuring WASM (wasmtime) cold start...
+Run 1: 1.86s
+Run 2: 1.51s
+Run 3: 1.57s
+Run 4: 1.58s
+Run 5: 1.60s
+Average WASM (wasmtime) cold start time: 1.624s
+
+==> Measuring WASM (wasmer) cold start...
+Run 1: 1.58s
+Run 2: 1.53s
+Run 3: 1.71s
+Run 4: 1.55s
+Run 5: 1.75s
+Average WASM (wasmer) cold start time: 1.624s
+
+
+==> Warm Loop Test (100 runs in a single shell)
+This test runs each binary 100 times in a loop within a single shell process. It highlights throughput and JIT warm-up behavior.
+-- Native 
+   real 0m51,717s
+   user 0m40,142s
+   sys  0m11,568s
+-- WASM (wasmtime) 
+   real 2m16,046s
+   user 1m48,614s
+   sys  0m24,159s
+-- WASM (wasmer) 
+   real 1m32,654s
+   user 1m13,559s
+   sys  0m19,606s
+
+==> Memory Usage (Maximum Resident Set Size)
+This test measures the peak memory usage (Maximum Resident Set Size) for each binary during a single run.
+-- Native:
+        Maximum resident set size (kbytes): 92268
+-- WASM (wasmtime):
+        Maximum resident set size (kbytes): 144932
+-- WASM (wasmer):
+        Maximum resident set size (kbytes): 225076
+
+==> Binary Sizes (in bytes)
+This test compares the actual on-disk size of the native binary and the WASM binary.
+Native: ../bin/mobilenet-oc-l = 29846032 bytes
+WASM (wasmtime/wasmer): ../bin/mobilenet-oc-l-o.wasm = 28410861 bytes
+
+==> Throughput Test (wall time for 100 runs)
+This test measures how many runs per second each binary can handle, based on the wall clock time for 100 full executions.
+-- Native:
+  100 runs in 35 seconds => 2.85 runs/sec
+-- WASM (wasmtime):
+  100 runs in 128 seconds => .78 runs/sec
+-- WASM (wasmer):
+  100 runs in 126 seconds => .79 runs/sec

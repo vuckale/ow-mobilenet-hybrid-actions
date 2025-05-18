@@ -1,0 +1,12 @@
+[
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 12, "avg_duration": 376, "avg_total": 388
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 15, "avg_duration": 397, "avg_total": 412
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 15, "avg_duration": 380, "avg_total": 395
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 12, "avg_duration": 399, "avg_total": 411
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 14, "avg_duration": 370, "avg_total": 384
+    }
+]

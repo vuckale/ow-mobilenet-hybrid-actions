@@ -1,0 +1,12 @@
+[
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 18, "avg_duration": 1024, "avg_total": 1042
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 18, "avg_duration": 1001, "avg_total": 1019
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 13, "avg_duration": 1007, "avg_total": 1020
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 17, "avg_duration": 976, "avg_total": 993
+    },
+    {"concurrency": 1, "count": 1, "avg_init": "N/A", "max_wait": 14, "avg_duration": 1035, "avg_total": 1049
+    }
+]

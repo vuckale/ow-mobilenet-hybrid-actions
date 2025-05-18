@@ -1,0 +1,67 @@
+>_ ./benchmark_local.sh --aot
+
+==> Cold Start Test (AOT)
+This test repeats the cold start benchmark, but using ahead-of-time compiled WASM binaries.
+==> Measuring Native cold start...
+Run 1: 0.61s
+Run 2: 0.58s
+Run 3: 0.43s
+Run 4: 0.43s
+Run 5: 0.55s
+Average Native cold start time: .520s
+
+==> Measuring WASM (wasmtime AOT) cold start...
+Run 1: 1.46s
+Run 2: 1.05s
+Run 3: 1.07s
+Run 4: 1.03s
+Run 5: 1.15s
+Average WASM (wasmtime AOT) cold start time: 1.152s
+
+==> Measuring WASM (wasmer AOT) cold start...
+Run 1: 1.81s
+Run 2: 1.46s
+Run 3: 1.21s
+Run 4: 1.29s
+Run 5: 1.05s
+Average WASM (wasmer AOT) cold start time: 1.364s
+
+
+==> Warm Loop Test (AOT - 100 runs in a single shell)
+This test runs each AOT binary 100 times in a loop to measure throughput without JIT overhead.
+-- Native 
+   real 0m42,123s
+   user 0m32,952s
+   sys  0m9,112s
+-- WASM (wasmtime AOT) 
+   real 1m44,029s
+   user 1m32,608s
+   sys  0m8,460s
+-- WASM (wasmer AOT) 
+   real 1m42,829s
+   user 1m27,283s
+   sys  0m16,521s
+
+==> Memory Usage (AOT - Maximum Resident Set Size)
+This test measures peak memory usage for AOT-compiled WASM binaries.
+-- Native:
+        Maximum resident set size (kbytes): 92268
+-- WASM (wasmtime AOT):
+        Maximum resident set size (kbytes): 110464
+-- WASM (wasmer AOT):
+        Maximum resident set size (kbytes): 238720
+
+==> Binary Sizes (AOT - in bytes)
+This test compares the size of AOT-compiled WASM binaries.
+Native: ../bin/mobilenet-oc-l = 29846032 bytes
+WASM (wasmtime AOT): ../bin/mobilenet-oc-l-wasmtime-native.cwasm = 40515912 bytes
+WASM (wasmer AOT): ../bin/mobilenet-oc-l-wasmer-native.wasmu = 44030232 bytes
+
+==> Throughput Test (AOT - wall time for 100 runs)
+This test measures throughput using AOT binaries without runtime compilation delay.
+-- Native:
+  100 runs in 41 seconds => 2.43 runs/sec
+-- WASM (wasmtime AOT):
+  100 runs in 87 seconds => 1.14 runs/sec
+-- WASM (wasmer AOT):
+  100 runs in 79 seconds => 1.26 runs/sec
