@@ -1,16 +1,17 @@
 #!/bin/bash
 
-# Get label from argument, default to "run"
+# get label from argument, default to "run"
 RUNTIME_LABEL=${1:-run}
 
 ACTION="add"
 INPUT_TEMPLATE="./inputs/add.json"
 MAX_CONCURRENCY=15
-DELAY_BETWEEN_LEVELS=5  # seconds
+DELAY_BETWEEN_LEVELS=5
 
 OUTPUT_FILE="concurrency_results_${RUNTIME_LABEL}.csv"
 METRICS_FILE="host_metrics_${RUNTIME_LABEL}.csv"
-# Create CSV headers
+
+# create CSV headers
 echo "Concurrency,Invocation,Time(ms),Success" > "$OUTPUT_FILE"
 echo "Timestamp,Concurrency,CPU_Usage(%),Mem_Used(MB),Mem_Free(MB)" > "$METRICS_FILE"
 
@@ -19,7 +20,7 @@ function log_metrics {
   local timestamp
   timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
-  # Sample CPU and Memory
+  # sample CPU and memory
   local cpu
   cpu=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}')  # idle % -> used
   local mem_info
@@ -44,14 +45,14 @@ function invoke {
   echo "$output" | jq '.result' &>/dev/null
   if [ $? -eq 0 ]; then
     echo "$concurrency_level,$invocation_id,$runtime,1" >> "$OUTPUT_FILE"
-    echo "✅ Concurrency $concurrency_level - Invocation $invocation_id: $runtime ms"
+    echo "Concurrency $concurrency_level - Invocation $invocation_id: $runtime ms"
   else
     echo "$concurrency_level,$invocation_id,$runtime,0" >> "$OUTPUT_FILE"
-    echo "❌ Concurrency $concurrency_level - Invocation $invocation_id: $runtime ms"
+    echo "Concurrency $concurrency_level - Invocation $invocation_id: $runtime ms"
   fi
 }
 
-# Ramp up concurrency
+# ramp up concurrency
 for ((c=1; c<=MAX_CONCURRENCY; c++)); do
   echo "[INFO] Starting batch with concurrency = $c"
   

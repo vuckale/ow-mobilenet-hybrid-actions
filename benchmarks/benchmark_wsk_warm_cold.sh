@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Action names
+# action names
 ACTION="add"
 PARALLEL_ACTIONS=("mobilenet_native_rust1" "mobilenet_native_rust2" "mobilenet_native_rust3")
 
@@ -29,9 +29,9 @@ function invoke_action {
 
   echo "$output" | jq '.result' &>/dev/null
   if [ $? -ne 0 ]; then
-    echo " ❌ ERROR"
+    echo "ERROR"
   else
-    echo " ✅"
+    echo "DONE"
   fi
 }
 
